@@ -8,7 +8,7 @@ function CourseInfo() {
                 What You'll Learn
             </h1>
             <div className='flex justify-center'>
-                <ul className="space-y-3 text-xl grid grid-cols-2 mb-20">
+                <ul className="space-y-3 text-xl grid grid-cols-1 lg:grid-cols-2 p-4 leading-normal mb-20">
                     <div className='flex flex-col items-start'>
                         <li className="flex space-x-3 ">
                             <span className="h-5 w-5 flex justify-center items-center rounded-full text-blue-600 bg-blue-800/30">
@@ -98,8 +98,8 @@ function CourseInfo() {
                 <CourseTimeline titleName={"Express"} Instructor={"MJ"} topic={"Knowledge of API creation and Call"} topicDes={"lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"}/>
                 <CourseTimeline titleName={"Node"} Instructor={"MJ"} topic={"Start with the Backend"} topicDes={"lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"}/>
                 <CourseTimeline titleName={"MongoDB"} Instructor={"MJ"} topic={"Database Creation & Management"} topicDes={"lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"}/>
-                <div class="ps-2 my-2 mb-20 first:mt-0">
-                    <h3 class="text-xl font-medium uppercase text-gray-500 ">
+                <div className="ps-2 my-2 mb-20 first:mt-0">
+                    <h3 className="text-xl font-medium uppercase text-gray-500 ">
                         "Now, You are a Full Stack Developer"
                     </h3>
                 </div>

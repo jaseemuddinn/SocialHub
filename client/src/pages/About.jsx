@@ -23,7 +23,7 @@ function About() {
             <div className='grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4 p-4 mb-20'>
                 <TeamCard coverURL={member1} imgURL={member1} name={"Bhavya Deveshwar"} position={"Web Developer"} linkedinURL={"https://www.linkedin.com/in/bhavya-deveshwar/"} twitterURL={"https://twitter.com/BhavyaDeveshwar"} instaURL={"https://www.instagram.com/bhavyadeveshwar/"} />
                 <TeamCard coverURL={member2} imgURL={member2} name={"Simran Kaur Juneja"} position={"Web Developer"} linkedinURL={"https://www.linkedin.com/in/simranjuneja11/"} twitterURL={"https://twitter.com/KaurSimran1100"} instaURL={"https://www.instagram.com/_simmrankaurr_/"} />
-                <TeamCard coverURL={member3} imgURL={member3} name={"Ayush Verma"} position={"Web Developer"} linkedinURL={"https://www.linkedin.com/in/ayuute/"} instaURL={"https://www.instagram.com/ayuu.te/"} />
+                <TeamCard coverURL={member3} imgURL={member3} name={"Ayush Verma"} position={"Cloud Architect"} linkedinURL={"https://www.linkedin.com/in/ayuute/"} instaURL={"https://www.instagram.com/ayuu.te/"} />
                 <TeamCard coverURL={member4} imgURL={member5} name={"Jaseemuddin Naseem"} position={"Web Developer"} linkedinURL={"https://www.linkedin.com/in/jaseemuddin/"} twitterURL={"https://twitter.com/itsjaseem"} instaURL={"https://www.instagram.com/its.jaseem/"} />
             </div>
             <Footer />
