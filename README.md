@@ -59,4 +59,4 @@ We welcome contributions from the community to make this platform even more acce
 
 ## Feedback and Support
 
-If you have any feedback, suggestions, or issues, please [submit an issue](https://github.com/your-username/accessibility-learning-hub/issues). We appreciate your input as we strive to create a platform that benefits everyone.
+If you have any feedback, suggestions, or issues, please submit an issue. We appreciate your input as we strive to create a platform that benefits everyone.
