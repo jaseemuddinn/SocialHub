@@ -8,7 +8,7 @@ function Job() {
         <div>
             <Navbar />
 
-            <h1 className='max-w-[85rem] px-4 sm:px-6 mx-auto mt-10 mb-10 lg:px-3 font-semibold text-black text-2xl lg:text-5xl md:text-3xl text-center'>
+            <h1 className='max-w-[85rem] px-4 sm:px-6 mx-auto mt-10 mb-10 lg:px-3 font-semibold text-black text-2xl lg:text-5xl md:text-3xl text-center font-Montserrat'>
                 Jobs For You
             </h1>
             <div className='grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 p-4 mb-20'>

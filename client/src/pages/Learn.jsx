@@ -17,7 +17,7 @@ function Learn() {
             Courses For You
         </h1>
     <div className='grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4 p-4 mb-20'>
-        <CourseCard imgSrc={course1} courseName={"Web Development"} price={"Free"} />
+        <CourseCard imgSrc={course1} courseName={"Web Development"} price={"Free"} courseURL={'/learn/about-course'}/>
         <CourseCard imgSrc={course2} courseName={"Counselling"} price={"Free"}/>
         <CourseCard imgSrc={course3} courseName={"Physiotherapy"} price={"Free"}/>
         <CourseCard imgSrc={course4} courseName={"Customer Executive"} price={"Free"}/>

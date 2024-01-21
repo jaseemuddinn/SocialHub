@@ -1,6 +1,23 @@
-import React from 'react'
+import { getAuth, onAuthStateChanged } from 'firebase/auth';
+import React, { useEffect, useState } from 'react'
 
 function Hero() {
+
+    const [displayName, setDisplayName] = useState(null);
+     useEffect(()=>{
+        const auth = getAuth();
+
+        const unsubscribe = onAuthStateChanged(auth, (user)=>{
+            if(user){
+                const userDisplayName = user.displayName;
+                setDisplayName(userDisplayName)
+            } else{
+                setDisplayName('Guest')
+            }
+        })
+        return ()=> unsubscribe();
+     },[])
+
     return (
         <div>
             <div className="bg-slate-900">
@@ -10,8 +27,11 @@ function Hero() {
 
                         </div>
                         <div className="max-w-3xl text-center mx-auto">
-                            <h1 className="block font-medium text-gray-200 text-4xl sm:text-5xl md:text-6xl lg:text-7xl mt-20">
-                                Now it's easier than ever to find your job
+                            <h1 className="block font-medium text-gray-200 text-lg sm:text-3xl md:text-4xl lg:text-2xl mt-20">
+                                Hello, {displayName}!
+                            </h1>
+                            <h1 className="block font-medium text-gray-200 text-4xl sm:text-5xl md:text-6xl lg:text-7xl mt-2">
+                                Now It's Easier Than Ever To Find The Job
                             </h1>
                         </div>
 

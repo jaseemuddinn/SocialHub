@@ -1,9 +1,12 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
-function CourseCard({ imgSrc, courseName, price }) {
-    return (
+function CourseCard({ imgSrc, courseName, price, courseURL }) {
+
+    const navigate = useNavigate();
+        return (
         <div>
-            <a href="#" className="group relative block overflow-hidden rounded-lg border border-gray-300 drop-shadow-lg">
+            <a href="#" className="group relative block overflow-hidden rounded-2xl border border-gray-300 drop-shadow-lg">
                 <button
                     className="absolute end-4 top-4 z-10 rounded-full bg-white p-1.5 text-gray-900 transition hover:text-gray-900/75"
                 >
@@ -33,17 +36,19 @@ function CourseCard({ imgSrc, courseName, price }) {
                 />
 
                 <div className="relative border border-gray-100 bg-white p-6">
-                    <span className="whitespace-nowrap bg-[] px-3 py-1.5 text-xs font-medium"> New </span>
+                    <span className="whitespace-nowrap bg-[] text-xs font-medium"> New </span>
 
-                    <h3 className="mt-4 text-lg font-medium text-gray-900">{courseName}</h3>
+                    <h3 className="mt-1 text-lg font-semibold text-gray-900">{courseName}</h3>
 
-                    <p className="mt-1.5 text-sm text-gray-700">{price}</p>
+                    <p className="mt-1.5 text-sm font-medium text-gray-700">{price}</p>
 
                     <form className="mt-4 text-white">
                         <button
-                            className="block w-full rounded bg-[#1d1b44] p-4 text-sm font-medium transition hover:scale-105"
+                            className="block w-full rounded-lg bg-[#1d1b44] p-4 text-sm font-medium transition hover:scale-105"
+                            // onClick={()=>navigate('/about-course')}
+                            onClick={()=>navigate(courseURL)}
                         >
-                            Enroll in this Course
+                            View this Course
                         </button>
                     </form>
                 </div>
