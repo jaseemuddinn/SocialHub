@@ -11,8 +11,6 @@ import ProfilePage from './pages/Profile'
 import About from './pages/About'
 import AboutCourse from './pages/AboutCourse'
 
-
-
 function App() {
   return (
     <BrowserRouter>
