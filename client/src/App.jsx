@@ -5,7 +5,7 @@ import ForgotPassword from './pages/ForgotPassword'
 import Learn from './pages/Learn'
 import Job from './pages/Work'
 import Blog from './pages/Blog'
-import Typeform from './pages/typeform'
+// import Typeform from './pages/typeform'
 import Signup from './pages/Signup'
 import ProfilePage from './pages/Profile'
 import About from './pages/About'
@@ -24,7 +24,7 @@ function App() {
         <Route path='/learn' element={<Learn />} />
         <Route path='/work' element={<Job />} />
         <Route path='/blog' element={<Blog />} />
-        <Route path='/info' element={<Typeform />} />
+        {/* <Route path='/info' element={<Typeform />} /> */}
         <Route path='/profile' element={<ProfilePage />} />
         <Route path='/about-us' element={<About />} />
         <Route path='/learn/about-course' element={<AboutCourse />} />
