@@ -1,10 +1,9 @@
 import Hero from '../components/Hero'
 import Navbar from '../components/Navbar'
 import PopularCourses from '../components/PopularCourses'
-import OpenJobs from '../components/OpenJobs'
 import Help from '../components/Help'
 import Footer from '../components/Footer'
-
+import JobCard from '../components/JobCard'
 
 function Home() {
   return (
@@ -12,7 +11,7 @@ function Home() {
       <Navbar />
       <Hero />
       <PopularCourses />
-      <OpenJobs />
+      <JobCard />
       <Help />
       <Footer />
     </>
