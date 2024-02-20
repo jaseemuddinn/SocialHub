@@ -1,16 +1,21 @@
-const success = (statusCode, result) => ({
-    status: "ok",
-    statusCode,
-    result,
-});
+// responseWrapper.js
 
-const error = (statusCode, message) => ({
-    status: "error",
-    statusCode,
-    message,
-});
+const success = (statusCode, message, data) => {
+    return {
+        statusCode,
+        message,
+        data
+    };
+};
+
+const error = (statusCode, message) => {
+    return {
+        statusCode,
+        message
+    };
+};
 
 module.exports = {
     success,
-    error,
+    error
 };

@@ -1,8 +1,6 @@
-// auth.js
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth';
 import { initializeApp } from 'firebase/app';
 
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
     apiKey: "AIzaSyDq9IUYOrT2RnKo-r4LJWf0waW7S2J6Tjk",
     authDomain: "social-hub-66e6f.firebaseapp.com",
@@ -13,9 +11,7 @@ const firebaseConfig = {
     measurementId: "G-0PKLVPPKYS",
 };
 
-    const app = initializeApp(firebaseConfig);
-
-
+const app = initializeApp(firebaseConfig);
 const auth = getAuth();
 
 export const signUp = async (email, password) => {
@@ -23,7 +19,7 @@ export const signUp = async (email, password) => {
         const userCredential = await createUserWithEmailAndPassword(auth, email, password);
         return userCredential.user;
     } catch (error) {
-        throw error;
+        throw error; // Propagate error for specific handling in authController.js
     }
 };
 
@@ -32,6 +28,6 @@ export const signIn = async (email, password) => {
         const userCredential = await signInWithEmailAndPassword(auth, email, password);
         return userCredential.user;
     } catch (error) {
-        throw error;
+        throw error; // Propagate error for specific handling in authController.js
     }
 };
