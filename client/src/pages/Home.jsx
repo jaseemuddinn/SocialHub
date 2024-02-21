@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar'
 import PopularCourses from '../components/PopularCourses'
 import Help from '../components/Help'
 import Footer from '../components/Footer'
-import JobCard from '../components/jobCard'
+// import JobCard from '../components/jobCard'
 
 function Home() {
   return (
@@ -11,7 +11,7 @@ function Home() {
       <Navbar />
       <Hero />
       <PopularCourses />
-      <JobCard />
+      {/* <JobCard /> */}
       <Help />
       <Footer />
     </>

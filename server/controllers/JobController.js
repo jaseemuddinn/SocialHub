@@ -34,7 +34,7 @@ const jobs = async (req, res) => {
         res.status(200).json(jobs);
     } catch (error) {
         console.error(error);
-        res.status(500).send('Internal server error');
+        res.status(500).send("Internal Server Error: " + error.message);
     }
 };
 
