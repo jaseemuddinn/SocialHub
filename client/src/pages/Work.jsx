@@ -14,7 +14,7 @@ function Job() {
 
     const fetchData = async () => {
         try {
-            const response = await axios.get('http://localhost:4000/jobs/getjobs'); // Make a request to your backend API
+            const response = await axios.get('https://social-hub-xdj6.vercel.app/jobs/getjobs'); // Make a request to your backend API
             setJobs(response.data.jobs); // Update the state with the fetched data
             console.log(response.data.jobs);
         } catch (error) {

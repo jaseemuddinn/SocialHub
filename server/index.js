@@ -18,14 +18,14 @@ app.use(cors({
 }));
 
 
-app.use('/jobs', jobRouter);
-app.use('/auth', authRouter);
-
 
 // Define routes
 app.get('/', (req, res) => {
     res.json('Hello, World!');
 });
+app.use('/jobs', jobRouter);
+app.use('/auth', authRouter);
+
 
 
 // Start the server
