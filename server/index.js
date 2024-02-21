@@ -13,7 +13,8 @@ const app = express();
 app.use(express.json());
 app.use(cors({
     Credentials: true,
-    origin: "http://localhost:5173",
+    // origin: "http://localhost:5173",
+    origin: "https://social-hub.app/",
 }));
 
 
@@ -23,7 +24,7 @@ app.use('/auth', authRouter);
 
 // Define routes
 app.get('/', (req, res) => {
-    res.send('Hello, World!');
+    res.json('Hello, World!');
 });
 
 

@@ -3,6 +3,7 @@ import { initializeApp } from 'firebase/app';
 
 const firebaseConfig = {
     apiKey: "AIzaSyDq9IUYOrT2RnKo-r4LJWf0waW7S2J6Tjk",
+    // apiKey: process.env.apiKey,
     authDomain: "social-hub-66e6f.firebaseapp.com",
     projectId: "social-hub-66e6f",
     storageBucket: "social-hub-66e6f.appspot.com",
