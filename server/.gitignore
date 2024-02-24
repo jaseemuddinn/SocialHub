@@ -9,4 +9,3 @@
 *.sln
 *.sw?
 .env
-vercel.json
