@@ -1,5 +1,6 @@
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth';
 import { initializeApp } from 'firebase/app';
+import { getStorage } from 'firebase/storage';
 
 const firebaseConfig = {
     apiKey: "AIzaSyDq9IUYOrT2RnKo-r4LJWf0waW7S2J6Tjk",
@@ -13,6 +14,7 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
+const storage = getStorage(app);
 const auth = getAuth();
 
 export const signUp = async (email, password) => {
@@ -32,3 +34,5 @@ export const signIn = async (email, password) => {
         throw error; // Propagate error for specific handling in authController.js
     }
 };
+
+export { storage };

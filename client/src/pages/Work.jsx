@@ -35,12 +35,13 @@ function Job() {
                     <WorkCard
                         jobTitle={"Software Developer"}
                         jobOwner={"Google"}
-                        jobURL={"https://kgo.googleusercontent.com/profile_vrt_raw_bytes_1587515358_10512.png"}
+                        // jobURL={"https://kgo.googleusercontent.com/profile_vrt_raw_bytes_1587515358_10512.png"}
                         jobDesc={"lorem ipsum lorem ipsum lorem ipsum orem ipsum lorem ipsum lorem ispum "}
                         date={"20th December 2023"}
                         status={"Open"}
                         time={"9 AM - 5 PM"}
                         type={"Work from Home"}
+                        jobImg={"https://kgo.googleusercontent.com/profile_vrt_raw_bytes_1587515358_10512.png"}
                     />
                     <h1 className='font-medium'>"If only one dummy job list is being displayed, it indicates that the Job API we were using has reached its limit. We apologize for any inconvenience this may cause. The API limit renews every month, and it typically functions without issues. However, we are exploring alternative options to ensure this issue does not occur again in the future."</h1>
                 </div>

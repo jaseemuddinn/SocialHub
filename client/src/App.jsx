@@ -10,6 +10,7 @@ import Signup from './pages/Signup'
 import ProfilePage from './pages/Profile'
 import About from './pages/About'
 import AboutCourse from './pages/AboutCourse'
+import WriteBlog from './pages/WriteBlog'
 
 function App() {
   return (
@@ -26,9 +27,9 @@ function App() {
         <Route path='/profile' element={<ProfilePage />} />
         <Route path='/about-us' element={<About />} />
         <Route path='/learn/about-course' element={<AboutCourse />} />
+        <Route path='/blog/write-blog' element={<WriteBlog />} />
       </Routes>
     </BrowserRouter>
-
   )
 }
 

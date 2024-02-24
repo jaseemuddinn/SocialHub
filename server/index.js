@@ -5,16 +5,22 @@ const cors = require('cors');
 const dotenv = require('dotenv');
 const jobRouter = require('./routers/JobRouter');
 const authRouter = require('./routers/authRouter')
+const blogRouter = require('./routers/blogRouter')
 
+// Configure environment variables
 dotenv.config();
 
 // Create an instance of Express
 const app = express();
+
+// Configure the app to use JSON
 app.use(express.json());
+
+// Enable CORS
 app.use(cors({
     Credentials: true,
-    // origin: "http://localhost:5173",
-    origin: "https://social-hub.app/",
+    origin: process.env.ORIGIN,
+    // origin: "https://social-hub.app/",
 }));
 
 
@@ -25,8 +31,10 @@ app.get('/', (req, res) => {
 });
 app.use('/jobs', jobRouter);
 app.use('/auth', authRouter);
+app.use('/blog', blogRouter);
 
-
+// Connect to the database
+dbConnect();
 
 // Start the server
 const PORT = process.env.PORT || 4001;
