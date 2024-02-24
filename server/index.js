@@ -3,7 +3,7 @@ const express = require('express');
 const dbConnect = require('./dbConnect');
 const cors = require('cors');
 const dotenv = require('dotenv');
-const jobRouter = require('./routers/JobRouter');
+// const jobRouter = require('./routers/JobRouter');
 const authRouter = require('./routers/authRouter')
 const blogRouter = require('./routers/blogRouter')
 
@@ -29,7 +29,7 @@ app.use(cors({
 app.get('/', (req, res) => {
     res.json('Hello, World!');
 });
-app.use('/jobs', jobRouter);
+// app.use('/jobs', jobRouter);
 app.use('/auth', authRouter);
 app.use('/blog', blogRouter);
 
