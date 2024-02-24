@@ -50,7 +50,7 @@ const WriteBlog = () => {
                     // Handle successful upload
                     getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
                         // Submit blog data to server with image URL
-                        axios.post('http://localhost:4000/blog/createblog', {
+                        axios.post('https://social-hub-xdj6.vercel.app/blog/createblog', {
                             title,
                             content,
                             image: downloadURL // Save image URL in the database

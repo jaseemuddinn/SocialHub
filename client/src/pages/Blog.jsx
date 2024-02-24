@@ -12,7 +12,7 @@ function Blog() {
     const [blog, setBlog] = useState([]);
 
     useEffect(() => {
-        axios.get("http://localhost:4000/blog/fetchblogs").then((response) => {
+        axios.get("https://social-hub-xdj6.vercel.app/blog/fetchblogs").then((response) => {
             setBlog(response.data);
         })
             .catch(error => {
