@@ -33,8 +33,8 @@ const jobs = async (req, res) => {
         const jobs = await fetchJobs();
         res.status(200).json(jobs);
     } catch (error) {
-        console.error(error);
-        res.status(500).send("Internal Server Error: " + error.message);
+        // console.error(error);
+        res.status(500).send("Internal Server Error");
     }
 };
 
