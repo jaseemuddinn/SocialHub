@@ -19,7 +19,9 @@ app.use(express.json());
 // Enable CORS
 app.use(cors({
     Credentials: true,
-    origin: process.env.ORIGIN,
+    // origin: process.env.ORIGIN,
+    // origin: ['http://localhost:5173', 'https://social-hub.app'],
+    origin: "*",
 }));
 
 

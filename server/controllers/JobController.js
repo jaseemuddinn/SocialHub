@@ -43,6 +43,7 @@ module.exports = {
 };
 
 
+// METHOD 2 (ALTERNATIVE CODE)
 // const axios = require('axios');
 
 // const fetchJobs = async () => {

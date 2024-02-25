@@ -31,7 +31,7 @@ export const signIn = async (email, password) => {
         const userCredential = await signInWithEmailAndPassword(auth, email, password);
         return userCredential.user;
     } catch (error) {
-        throw error; // Propagate error for specific handling in authController.js
+        throw error;
     }
 };
 
