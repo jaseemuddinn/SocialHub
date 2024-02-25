@@ -51,7 +51,7 @@ npm install
 npm run dev
 ```
 
-Visit [http://localhost:3000](http://localhost:3000) in your browser to explore the project.
+Visit [http://localhost:3000](http://localhost:5173) in your browser to explore the project.
 
 ## Contribution Guidelines
 
