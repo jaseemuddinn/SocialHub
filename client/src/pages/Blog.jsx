@@ -57,41 +57,6 @@ function Blog() {
                     title={"How my life changed?"}
                     desc={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, facere? Expedita aspernatur esse amet, facilis numquam architecto corrupti excepturi, ut nemo id fuga tempora qui explicabo culpa a tenetur placeat."}
                 />
-                {/* <BlogCard
-                    imgURL={"https://images.unsplash.com/photo-1668906093328-99601a1aa584?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=986&q=80"}
-                    title={"SocialHub Changed my life."}
-                    desc={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, facere? Expedita aspernatur esse amet, facilis numquam architecto corrupti excepturi, ut nemo id fuga tempora qui explicabo culpa a tenetur placeat."}
-                />
-                <BlogCard
-                    imgURL={"https://images.unsplash.com/photo-1567016526105-22da7c13161a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80"}
-                    title={"Give your life a real meaning."}
-                    desc={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, facere? Expedita aspernatur esse amet, facilis numquam architecto corrupti excepturi, ut nemo id fuga tempora qui explicabo culpa a tenetur placeat."}
-                />
-                <BlogCard
-                    imgURL={"https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"}
-                    title={"Don't give up on your life."}
-                    desc={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, facere? Expedita aspernatur esse amet, facilis numquam architecto corrupti excepturi, ut nemo id fuga tempora qui explicabo culpa a tenetur placeat."}
-                />
-                <BlogCard
-                    imgURL={'https://images.unsplash.com/photo-1540575861501-7cf05a4b125a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80'}
-                    title={"How my life changed?"}
-                    desc={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, facere? Expedita aspernatur esse amet, facilis numquam architecto corrupti excepturi, ut nemo id fuga tempora qui explicabo culpa a tenetur placeat."}
-                />
-                <BlogCard
-                    imgURL={"https://images.unsplash.com/photo-1668906093328-99601a1aa584?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=986&q=80"}
-                    title={"SocialHub Changed my life."}
-                    desc={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, facere? Expedita aspernatur esse amet, facilis numquam architecto corrupti excepturi, ut nemo id fuga tempora qui explicabo culpa a tenetur placeat."}
-                />
-                <BlogCard
-                    imgURL={"https://images.unsplash.com/photo-1567016526105-22da7c13161a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80"}
-                    title={"Give your life a real meaning."}
-                    desc={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, facere? Expedita aspernatur esse amet, facilis numquam architecto corrupti excepturi, ut nemo id fuga tempora qui explicabo culpa a tenetur placeat."}
-                />
-                <BlogCard
-                    imgURL={"https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"}
-                    title={"Don't give up on your life."}
-                    desc={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, facere? Expedita aspernatur esse amet, facilis numquam architecto corrupti excepturi, ut nemo id fuga tempora qui explicabo culpa a tenetur placeat."}
-                /> */}
                 {blog.map(blog => (
                     <Link to={`/blog/${blog._id}`}>
                         <BlogCard

@@ -19,8 +19,7 @@ app.use(express.json());
 // Enable CORS
 app.use(cors({
     Credentials: true,
-    // origin: process.env.ORIGIN,
-    origin: "https://social-hub.app/",
+    origin: process.env.ORIGIN,
 }));
 
 
